@@ -1,3 +1,6 @@
+
+@import url(http://fonts.googleapis.com/css?family=Miss+Fajardose);
+
 $body-bg: #bdc3c7;
 
 $jumbotron-bg: #34495e; 
@@ -10,3 +13,12 @@ $navbar-default-brand-hover-color: $navbar-default-link-hover-color;
 
 
 @import 'bootstrap';
+
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
