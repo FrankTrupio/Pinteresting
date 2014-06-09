@@ -29,6 +29,12 @@ gem 'bootstrap-sass'
 
 gem 'devise', '~> 3.2.4'
 
+gem 'factory_girl_rails'
+gem 'capybara', '~> 2.2.1'
+gem 'cutest', '~> 1.2.1'
+# gem 'rspec'
+
+
 group :development, :test do
 	gem 'sqlite3'
 end
