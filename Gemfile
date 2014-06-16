@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.4'
+gem 'rails', '4.1.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -29,14 +29,12 @@ gem 'bootstrap-sass'
 
 gem 'devise', '~> 3.2.4'
 
-gem 'factory_girl_rails'
-gem 'capybara', '~> 2.2.1'
-gem 'cutest', '~> 1.2.1'
-# gem 'rspec'
-
 
 group :development, :test do
 	gem 'sqlite3'
+  gem 'factory_girl_rails'
+  gem 'minitest-rails'
+  gem 'minitest-rails-capybara'
 end
 
 group :production do
