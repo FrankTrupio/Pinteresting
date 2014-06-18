@@ -35,6 +35,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
+  gem 'capybara'
 end
 
 group :production do

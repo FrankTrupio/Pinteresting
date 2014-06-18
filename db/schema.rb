@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140602152859) do
+ActiveRecord::Schema.define(version: 20140618154448) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20140602152859) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "name"
   end
 
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true
@@ -40,6 +41,7 @@ ActiveRecord::Schema.define(version: 20140602152859) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
