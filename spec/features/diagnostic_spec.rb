@@ -1,9 +1,12 @@
 require "spec_helper"
 
-describe "Test" do
-  describe "When two is equal to two" do
-    let(:name_factory) { "test" } 
-    let(:user) { create(:user, :name => name_factory) }
+describe "Test" do 
+    let(:user) { create(:user) }
+  describe "random tests" do
+    before do
+      user
+      puts user.name
+    end
     it "asserts true" do
       assert_equal(2, 2)
     end
@@ -11,7 +14,6 @@ describe "Test" do
     it "visits the homepage" do
       visit("/")
       assert_equal(current_path, "/")
-      assert_equal(name, user.name)
     end
   end
 end

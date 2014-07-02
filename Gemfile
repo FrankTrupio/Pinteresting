@@ -36,6 +36,7 @@ group :development, :test do
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
   gem 'capybara'
+  gem 'database_cleaner'
 end
 
 group :production do
