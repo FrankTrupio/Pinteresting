@@ -33,14 +33,15 @@ gem 'paperclip', github: 'thoughtbot/paperclip'
 
 gem 'masonry-rails'
 
+gem 'aws-sdk'
+
 group :development, :test do
-	gem 'sqlite3'
+  gem 'sqlite3'
   gem 'factory_girl_rails'
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
   gem 'capybara'
   gem 'database_cleaner'
-  gem 'aws-sdk'
 end
 
 group :production do
