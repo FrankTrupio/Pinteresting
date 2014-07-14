@@ -31,6 +31,8 @@ gem 'devise', '~> 3.2.4'
 
 gem 'paperclip', github: 'thoughtbot/paperclip'
 
+gem 'masonry-rails'
+
 group :development, :test do
 	gem 'sqlite3'
   gem 'factory_girl_rails'
@@ -38,6 +40,7 @@ group :development, :test do
   gem 'minitest-rails-capybara'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'aws-sdk'
 end
 
 group :production do
